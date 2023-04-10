@@ -168,7 +168,7 @@ const testimonials = [
   },
   {
     testimonial:
-      "It is important to me as a software developer in order to stay up-to-date with the latest technologies.",
+      "Learning important to me as a software developer in order to stay up-to-date with the latest technologies.",
     name: "Continuous learning",
     
    
