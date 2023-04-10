@@ -5,6 +5,10 @@ import { styles } from "../styles";
 import { navLinks } from "../constants";
 import { menu, close } from "../assets";
 
+
+const resumeFile = require("../assets/sachin yadav.pdf");
+
+
 const Navbar = () => {
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
@@ -95,6 +99,8 @@ const Navbar = () => {
           </div>
         </div>
       </div>
+      <a href={resumeFile.default} download>Resume</a>
+
     </nav>
   );
 };
