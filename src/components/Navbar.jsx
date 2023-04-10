@@ -6,7 +6,7 @@ import { navLinks } from "../constants";
 import { menu, close } from "../assets";
 
 
-const resumeFile = require("../assets/sachin yadav.pdf");
+const resumeFile = require("../assets/sachin-yadav.pdf");
 
 
 const Navbar = () => {
@@ -99,7 +99,7 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-      <a href={resumeFile.default} download>Resume</a>
+      <a className="hidden sm:block text-white text-[18px] ml-10 font-medium" href={resumeFile.default} download>Resume</a>
 
     </nav>
   );
