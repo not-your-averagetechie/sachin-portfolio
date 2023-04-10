@@ -5,9 +5,7 @@ import { styles } from "../styles";
 import { navLinks } from "../constants";
 import { menu, close } from "../assets";
 
-
-const resumeFile = require("../assets/sachin-yadav.pdf");
-
+import resumeFile from "../assets/sachin-yadav.pdf";
 
 const Navbar = () => {
   const [active, setActive] = useState("");
@@ -46,8 +44,7 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-          
-          <p className='text-white text-[18px] font-bold cursor-pointer flex '>
+          <p className='text-white text-[18px] font-bold cursor-pointer flex'>
             Sachin &nbsp;
             <span className='sm:block hidden'> |  Web3 </span>
           </p>
@@ -65,6 +62,7 @@ const Navbar = () => {
               <a href={`#${nav.id}`}>{nav.title}</a>
             </li>
           ))}
+          
         </ul>
 
         <div className='sm:hidden flex flex-1 justify-end items-center'>
@@ -99,8 +97,8 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-      <a className="hidden sm:block text-white text-[18px] ml-10 font-medium" href={resumeFile.default} download>Resume</a>
 
+      <a href={resumeFile} download className='text-white font-bold ml-4'>Resume</a>
     </nav>
   );
 };
