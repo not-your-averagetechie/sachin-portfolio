@@ -19,6 +19,7 @@ import {
   Platter,
   gigaverse,
   Phenom,
+  Clogo,
 
   carrent,
   jobit,
@@ -154,6 +155,19 @@ const experiences = [
       "Designed and developed user interfaces for dApps using web3 libraries, integrated web3 wallets, and utilized decentralized storage solutions",
       "Collaborated with designers and product managers to create user-centered experiences for dApps and integrated third-party APIs and services",
       "Developed server-side logic for dApps using back-end technologies and utilized DevOps tools and practices to deploy and manage the applications",
+    ],
+  },
+  {
+    title: "Techical Lead",
+    company_name: "Consciousleap TM",
+    icon: Clogo,
+    iconBg: "#383E56",
+    date: "April 2023 - Present",
+    points: [
+      " As a tech lead, I oversaw the development of a full website and application from scratch",
+       "managing a team of three developers and setting coding standard and best practices",
+       "I facilitated communication between team members, managed workloads, conducted code reviews",
+      "and provided mentorship, resulting in a successful launch of the project on time and within budge",
     ],
   },
   
