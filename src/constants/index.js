@@ -158,7 +158,7 @@ const experiences = [
     ],
   },
   {
-    title: "Techical Lead",
+    title: "Technical Lead",
     company_name: "Consciousleap TM",
     icon: Clogo,
     iconBg: "#383E56",
