@@ -145,7 +145,7 @@ const experiences = [
   },
   {
     title: "Full stack web3 Developer",
-    company_name: "Platter",
+    company_name: "Platter Inc",
     icon: Platter,
     iconBg: "#383E56",
     date: "Dec 2022 - Present",
