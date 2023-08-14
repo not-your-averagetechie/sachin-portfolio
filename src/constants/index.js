@@ -148,7 +148,7 @@ const experiences = [
     company_name: "Platter Inc",
     icon: Platter,
     iconBg: "#383E56",
-    date: "Dec 2022 - Present",
+    date: "Dec 2022 - April 2023",
     points: [
       "Demonstrated expertise in developing and deploying decentralized applications (dApps) using blockchain technologies",
       "including creating smart contracts and integrating them into dApps to enable blockchain functionality",

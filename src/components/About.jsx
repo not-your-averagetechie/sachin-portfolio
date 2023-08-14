@@ -47,11 +47,9 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
-        I'm a skilled software developer with experience in TypeScript and
-        JavaScript, and expertise in frameworks like React, Node.js, and
-        web3.js. I'm a quick learner and collaborate closely with clients to
-        create efficient, scalable, and user-friendly solutions that solve
-        real-world problems. Let's work together to bring your ideas to life!
+        As a seasoned software developer, my background includes a wealth of expertise in TypeScript and JavaScript, with a special focus on frameworks such as React, Node.js, and web3.js. This proficiency uniquely positions me to excel as a Web3 Product Manager.
+In my career, I have demonstrated the ability to swiftly adapt and have effectively collaborated with clients to engineer efficient, scalable, and user-centric solutions that address tangible challenges. This experience forms the bedrock upon which I can now drive the strategic vision for your Web3 products, transforming ideas into impactful realities.
+I'm eager to contribute my technical prowess and strategic acumen to your team. Let's unite our skills to shape the future of Web3 technologies together.
       </motion.p>
 
       <div className='mt-20 flex flex-wrap gap-10'>
