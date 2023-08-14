@@ -45,7 +45,7 @@ const About = () => {
 
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
-        className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
+        className='mt-4 text-secondary text-[17px] max-w-5xl leading-[30px]'
       >
         As a seasoned software developer, my background includes a wealth of expertise in TypeScript and JavaScript, with a special focus on frameworks such as React, Node.js, and web3.js. This proficiency uniquely positions me to excel as a Web3 Product Manager.
 In my career, I have demonstrated the ability to swiftly adapt and have effectively collaborated with clients to engineer efficient, scalable, and user-centric solutions that address tangible challenges. This experience forms the bedrock upon which I can now drive the strategic vision for your Web3 products, transforming ideas into impactful realities.
