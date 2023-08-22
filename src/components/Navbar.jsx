@@ -98,7 +98,9 @@ const Navbar = () => {
         </div>
       </div>
 
-      <a href="{resumeFile}" download class="button inline-block bg-transparent border-2 border-white  px-10 py-2 text-white font-bold ml-6">Resume</a>
+      <a href={resumeFile} download className="button inline-block bg-transparent border-2 border-white px-10 py-2 text-white font-bold ml-6">
+  Resume
+</a>
 
     </nav>
   );

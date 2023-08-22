@@ -47,10 +47,8 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-4 text-secondary text-[17px] max-w-5xl leading-[30px]'
       >
-        As a seasoned software developer, my background includes a wealth of expertise in TypeScript and JavaScript, with a special focus on frameworks such as React, Node.js, and web3.js. This proficiency uniquely positions me to excel as a Web3 Product Manager.
-In my career, I have demonstrated the ability to swiftly adapt and have effectively collaborated with clients to engineer efficient, scalable, and user-centric solutions that address tangible challenges. This experience forms the bedrock upon which I can now drive the strategic vision for your Web3 products, transforming ideas into impactful realities.
-I'm eager to contribute my technical prowess and strategic acumen to your team. Let's unite our skills to shape the future of Web3 technologies together.
-      </motion.p>
+        With a robust background in TypeScript, JavaScript, React, Node.js, and web3.js, I've honed both technical expertise and product management insights. My career showcases adaptability, collaborative prowess, and a knack for engineering user-centric solutions. 
+Transitioning into a Web3 Product Manager role, I bring a unique blend of technical finesse and strategic vision. Seamlessly translating user needs into impactful products, I'm eager to unite my skills with your team's, shaping the future of Web3 technologies together.</motion.p>
 
       <div className='mt-20 flex flex-wrap gap-10'>
         {services.map((service, index) => (
