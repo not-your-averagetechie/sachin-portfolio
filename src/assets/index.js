@@ -24,9 +24,8 @@ import threejs from "./tech/threejs.svg";
 import Platter from "./company/platter.jpg";
 import Phenom from "./company/phenom.jpg";
 import gigaverse from "./company/gigaverse.jpg";
-import Clogo from "./company/clogo.png";
-
-
+import Pluto from "./company/Pluto.png";
+import Plutologo from "./company/Plutologo.png";
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
@@ -57,6 +56,8 @@ export {
   gigaverse,
   Phenom,
   Clogo,
+  Plutologo,
+  Pluto,
   carrent,
   jobit,
   tripguide,

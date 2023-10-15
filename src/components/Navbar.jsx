@@ -98,9 +98,12 @@ const Navbar = () => {
         </div>
       </div>
 
-      <a href={resumeFile} download className="button inline-block bg-transparent border-2 border-white px-10 py-2 text-white font-bold ml-6">
-  Resume
+      <a href="{resumeFile}" download style="display: inline-block; background-color: #0074e4; color: #fff; font-weight: bold; padding: 10px 20px; text-decoration: none; border: 2px solid #0074e4; border-radius: 4px; text-align: center; transition: background-color 0.3s, color 0.3s;"
+  onmouseover="this.style.backgroundColor='#0056a0'; this.style.borderColor='#0056a0';"
+  onmouseout="this.style.backgroundColor='#0074e4'; this.style.borderColor='#0074e4';">
+  Download Resume
 </a>
+
 
     </nav>
   );
