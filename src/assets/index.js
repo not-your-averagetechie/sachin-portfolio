@@ -20,7 +20,7 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
-import Clogo from "./company/clogo.png";
+import clogo from "./company/clogo.png";
 import Platter from "./company/platter.jpg";
 import Phenom from "./company/phenom.jpg";
 import gigaverse from "./company/gigaverse.jpg";
@@ -55,7 +55,7 @@ export {
   Platter,
   gigaverse,
   Phenom,
-  Clogo,
+  clogo,
   Plutologo,
   Pluto,
   carrent,

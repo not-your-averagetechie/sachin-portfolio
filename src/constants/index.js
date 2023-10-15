@@ -19,10 +19,10 @@ import {
   Platter,
   gigaverse,
   Phenom,
-  Clogo,
+  clogo,
 
   carrent,
-  jobit,
+  
   tripguide,
   threejs,
 } from "../assets";
@@ -160,7 +160,7 @@ const experiences = [
   {
     title: "Technical Lead",
     company_name: "Consciousleap TM",
-    icon: Clogo,
+    icon: clogo,
     iconBg: "#383E56",
     date: "April 2023 - Present",
     points: [
