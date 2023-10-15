@@ -25,6 +25,7 @@ import {
   
   tripguide,
   threejs,
+  Plutologo,
 } from "../assets";
 
 export const navLinks = [
@@ -173,7 +174,7 @@ const experiences = [
   {
     title: "Technical Product manager",
     company_name: "Pluto",
-    icon: Pluto,
+    icon: Plutologo,
     iconBg: "#383E56",
     date: "September 2023 - Present",
     points: [
@@ -182,7 +183,7 @@ const experiences = [
 "Led full product development and provided strategic guidance, overseeing three critical initiatives for the Blockchain team,",
  "product team and design team  contributing significantly to the company's growth.",
 "Streamlined team processes through inclusive discussions, linear tasks resulting in a notable 13-point increase in team velocity,",
- "improving fast feature release each week.",
+ "improving fast feature release each week and bringing innovation in making PRD's and pitchdecks.",
     ],
   },
   
@@ -191,7 +192,7 @@ const experiences = [
 const testimonials = [
   {
     testimonial:
-      "As a Product Manager, I am dedicated to delivering high-quality products that meet user needs and drive business success.",
+      "As a Product Manager, I am dedicated to delivering high-quality products that meet user needs and drive business success to the next stage of innovation and technology.",
     name: "Commitment to Excellence",
     
   },
