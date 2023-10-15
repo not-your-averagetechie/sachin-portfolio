@@ -20,7 +20,7 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
-
+import Platter from "./company/Clogo.jpg";
 import Platter from "./company/platter.jpg";
 import Phenom from "./company/phenom.jpg";
 import gigaverse from "./company/gigaverse.jpg";
