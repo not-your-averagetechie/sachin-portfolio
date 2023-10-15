@@ -192,7 +192,7 @@ const experiences = [
 const testimonials = [
   {
     testimonial:
-      "As a Product Manager, I am dedicated to delivering high-quality products that meet user needs and drive business success to the next stage of innovation and technology.",
+      "As a Product Manager, I am dedicated to delivering high-quality products that meet user needs and drive business success to the next stage of innovation and technology with highest perfection.",
     name: "Commitment to Excellence",
     
   },
@@ -236,7 +236,7 @@ const projects = [
   {
     name: "Misfits By Pluto",
     description:
-      "Aligned product development with business objectives and market demands by collaborating with cross-functional teams to define product requirements, prioritize features, and optimize smart contracts and NFT minting processes. Also, managed NFT marketplace integrations, coordinated NFT collection releases.",
+      "Aligned product development with business objectives and market demands by collaborating with cross-functional teams to define product requirements, prioritize features, and optimize smart contracts and NFT minting processes. Also, managed NFT marketplace integrations, coordinated NFT collection releases and making proper PRD's and pitchdecks for the founders",
     tags: [
       {
         name: "Web3",
