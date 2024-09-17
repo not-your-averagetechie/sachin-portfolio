@@ -52,7 +52,7 @@ const services = [
     icon: web,
   },
   {
-    title: "MERN stack",
+    title: "Tech Product Manager",
     icon: mobile,
   },
   {
@@ -290,7 +290,7 @@ const projects = [
   {
     name: "Consciousleap",
     description:
-      "Built the whole framework ad product design for the mental health startup named as consciousleap.",
+      "Built the whole framework and product design for the mental health startup named as consciousleap. Designed the whole architecture and therapy booking services and automatic schedulings",
     tags: [
       {
         name: "nextjs",
