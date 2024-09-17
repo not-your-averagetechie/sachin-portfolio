@@ -30,6 +30,10 @@ import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 
+import create from "./create.png";
+import magicbatch from "./magicbatch.png";
+import health from "./health.png";
+
 export {
   logo,
   backend,
@@ -61,4 +65,7 @@ export {
   carrent,
   jobit,
   tripguide,
+  health,
+  create,
+  magicbatch,
 };

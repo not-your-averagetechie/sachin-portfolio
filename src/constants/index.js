@@ -20,6 +20,9 @@ import {
   gigaverse,
   Phenom,
   clogo,
+  health,
+  create,
+  magicbatch,
 
   carrent,
   
@@ -132,24 +135,24 @@ const experiences = [
     ],
   },
   {
-    title: "Chief of Technology",
+    title: "Associate Tech Product Manager",
     company_name: "Gigaverse pvt. ltd.",
     icon: gigaverse,
     iconBg: "#E6DEDD",
-    date: "May 2022 - dec 2022",
+    date: "June 2021 - Dec 2022",
     points: [
       "Managed and led technical product teams in the development and execution of protocol strategies, designs, and implementations",
       "Created bespoke bots to meet the specific needs of Gigaverse and its clients in defining and launching their instances of the protocol",
       "Facilitated goal setting, planning, retrospectives, and backlog grooming to ensure project milestones and objectives attained for website code",
-      
+      "Implemented five cutting-edge projects, including the launch of a groundbreaking NFT project. Later promoted to Associate Tech Product Manager.",
     ],
   },
   {
-    title: "Lead web3 Developer",
+    title: "Web3 Product Owner",
     company_name: "Platter Inc",
     icon: Platter,
     iconBg: "#383E56",
-    date: "Dec 2022 - April 2023",
+    date: "Dec 2022 - August 2023",
     points: [
       "Demonstrated expertise in developing and deploying decentralized applications (dApps) using blockchain technologies",
       "including creating smart contracts and integrating them into dApps to enable blockchain functionality",
@@ -158,19 +161,7 @@ const experiences = [
       "Developed server-side logic for dApps using back-end technologies and utilized DevOps tools and practices to deploy and manage the applications",
     ],
   },
-  {
-    title: "Technical Lead",
-    company_name: "Consciousleap TM",
-    icon: clogo,
-    iconBg: "#383E56",
-    date: "April 2023 - Present",
-    points: [
-      " As a tech lead, I oversaw the development of a full website and application from scratch",
-       "managing a team of three developers and setting coding standard and best practices",
-       "I facilitated communication between team members, managed workloads, conducted code reviews",
-      "and provided mentorship, resulting in a successful launch of the project on time and within budge",
-    ],
-  },
+  
   {
     title: "Technical Product manager",
     company_name: "Pluto",
@@ -273,9 +264,71 @@ const projects = [
       },
     ],
     image: tripguide,
-    source_code_link: "https://github.com/TradingElixir/Platter-frontend-nextjs",
+    source_code_link: "https://mint-site-demo-ten.vercel.app/",
   },
-  
+  {
+    name: "Create layer",
+    description:
+      "Built and launched a pipeline that converts all Twitter posts into NFTs, allowing users to mint them directly from the platform. This innovation drove significant engagement, helping the platform organically gain 80k followers in just one week.we built it like a farming campaign where users will like , comment and reply based on the tasks",
+    tags: [
+      {
+        name: "nextjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Thegraph",
+        color: "green-text-gradient",
+      },
+      {
+        name: "AWS/digital ocean",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: create,
+    source_code_link: "https://createlayer.xyz/",
+  },
+  {
+    name: "Consciousleap",
+    description:
+      "Built the whole framework ad product design for the mental health startup named as consciousleap.",
+    tags: [
+      {
+        name: "nextjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "mongoDB/ PostgreSQL",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Node.js",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: health,
+    source_code_link: "https://consciousleap.co/",
+  },
+  {
+    name: "Magicbatch",
+    description:
+      "Desinged the main minitng website and made the whole NFT backend with staking site and tokens ditribution with the help of cron jobs and made the smart contracts for the nft minting, the NFT's are priced at 2 eth right now",
+    tags: [
+      {
+        name: "OpenSea",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "MERN",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Solidity",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: magicbatch,
+    source_code_link: "https://magicbatch.xyz/",
+  },
 ];
 
 export { services, technologies, experiences, testimonials, projects };
