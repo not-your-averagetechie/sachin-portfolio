@@ -36,6 +36,7 @@ import health from "./health.png";
 import blaster from "./blaster.png";
 import ugc from "./ugc.png";
 import linkedin from "./linkedin.png";
+import phone from "./phone.svg";
 
 export {
   logo,
@@ -74,4 +75,5 @@ export {
   blaster,
   ugc,
   linkedin,
+  phone,
 };

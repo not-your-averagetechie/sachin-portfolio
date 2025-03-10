@@ -30,6 +30,7 @@ import {
   blaster,    // Add new image import
   ugc,        // Add new image import
   linkedin,   // Add new image import
+  github,     // Add new image import
 } from "../assets";
 
 export const navLinks = [
@@ -393,4 +394,23 @@ const projects = [
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+const socialLinks = [
+  {
+    name: "GitHub",
+    icon: github,
+    link: "https://github.com/not-your-averagetechie",
+  },
+  {
+    name: "LinkedIn",
+    icon: linkedin,
+    link: "https://www.linkedin.com/in/sachin-yadav-web3/",
+  },
+  {
+    name: "Phone",
+    icon: mobile, // Changed to use the mobile icon we already have
+    link: "tel:+917057480940",
+    display: "+91 7057480940",
+  },
+];
+
+export { services, technologies, experiences, testimonials, projects, socialLinks };
