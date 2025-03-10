@@ -33,6 +33,9 @@ import tripguide from "./tripguide.png";
 import create from "./create.png";
 import magicbatch from "./magicbatch.png";
 import health from "./health.png";
+import blaster from "./blaster.png";
+import ugc from "./ugc.png";
+import linkedin from "./linkedin.png";
 
 export {
   logo,
@@ -68,4 +71,7 @@ export {
   health,
   create,
   magicbatch,
+  blaster,
+  ugc,
+  linkedin,
 };

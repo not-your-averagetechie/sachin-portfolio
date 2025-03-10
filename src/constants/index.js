@@ -23,12 +23,13 @@ import {
   health,
   create,
   magicbatch,
-
   carrent,
-  
   tripguide,
   threejs,
   Plutologo,
+  blaster,    // Add new image import
+  ugc,        // Add new image import
+  linkedin,   // Add new image import
 } from "../assets";
 
 export const navLinks = [
@@ -154,30 +155,28 @@ const experiences = [
     iconBg: "#383E56",
     date: "Dec 2022 - August 2023",
     points: [
-      "Demonstrated expertise in developing and deploying decentralized applications (dApps) using blockchain technologies",
-      "including creating smart contracts and integrating them into dApps to enable blockchain functionality",
-      "Designed and developed user interfaces for dApps using web3 libraries, integrated web3 wallets, and utilized decentralized storage solutions",
-      "Collaborated with designers and product managers to create user-centered experiences for dApps and integrated third-party APIs and services",
-      "Developed server-side logic for dApps using back-end technologies and utilized DevOps tools and practices to deploy and manage the applications",
+      "Developed 2 decentralized applications dApps (Platter.fi and zerion.io) with 99.7% uptime, utilizing blockchain technologies to enhance technical credibility in the Web3 space.",
+      "Integrated 10+ third-party APIs to improve product functionality, resulting in increased user satisfaction by collaborating effectively with cross-functional teams.",
+      "Built relationships with key stakeholders, including KOLs, exchanges, launchpads, liquidity providers, and investors, to ensure smooth execution of token operations.",
+      "Strategized and executed token launches, including token distribution, public sales, and community engagement initiatives.",
+      "Developed and implemented distribution/airdrop models, focusing on utility, governance, and staking mechanisms for sustainable token economy growth.",
     ],
   },
-  
   {
-    title: "Technical Product manager",
+    title: "Technical Product Manager",
     company_name: "Pluto",
     icon: Plutologo,
     iconBg: "#383E56",
-    date: "September 2023 - Present",
+    date: "Sept 2023 - Present",
     points: [
-      "Played a key role in fundraising by crafting the company whitepaper, developing the pitch deck,", 
-      "and securing investments from a diverse group of angel investors, including Jayanti Kanani, the founder of Polygon.",
-"Led full product development and provided strategic guidance, overseeing three critical initiatives for the Blockchain team,",
- "product team and design team  contributing significantly to the company's growth.",
-"Streamlined team processes through inclusive discussions, linear tasks resulting in a notable 13-point increase in team velocity,",
- "improving fast feature release each week and bringing innovation in making PRD's and pitchdecks.",
+      "Orchestrated the release of three NFT collections and tokens (Gigav , Aptos ), generating a minimum of 200k usd in initial sales; ensured marketing efforts were synchronized with product availability, and launching another token in upcoming months for CREATE.",
+      "Spearheaded fundraising efforts by crafting the company's whitepaper, developing a compelling pitch deck, and securing investments from major investors like polygon ventures and jungle ventures.",
+      "Optimized product design, gather feedback, and measure core KPIs using Mixpanel.",
+      "Managed sprints, oversaw post-release updates, created release metrics dashboards on Mixpanel, and collaborated with the CEO on finalizing the PRD and design flow, while also addressing roadblocks in UI/UX and technical implementation.",
+      "Successfully launched two recent dApps in the last 3 months (ugc.fun and creator buds) while serving as acting Head of Product, which are now planned for integration with chains to increase visibility and user adoption; both platforms are powered by CREATE technology.",
+      "Collaborated with KOLs for influencing and educating masses, and worked with exchanges and services to ensure liquidity and maintain token stability.",
     ],
   },
-  
 ];
 
 const testimonials = [
@@ -328,6 +327,69 @@ const projects = [
     ],
     image: magicbatch,
     source_code_link: "https://magicbatch.xyz/",
+  },
+  {
+    name: "Blaster AI",
+    description:
+      "Developed an advanced AI system using TensorFlow, PyTorch, OpenCV, Scikit-learn, LangChain, Hugging Face, NLTK, NumPy, and Pandas that generates highly specialized prompts for lead generation, resulting in 70-80% conversion success rates compared to traditional methods.",
+    tags: [
+      {
+        name: "TensorFlow",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "LangChain",
+        color: "green-text-gradient",
+      },
+      {
+        name: "PyTorch",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: blaster, // You'll need to import appropriate image
+    source_code_link: "https://github.com/not-your-averagetechie/blaster.ai-GenAI-",
+  },
+  {
+    name: "UGC.fun",
+    description:
+      "Developed and launched UGC.Fun, an innovative platform that monetizes community-generated content through a unique trading mechanism. Implemented a 24-hour reward cycle where content creators earn based on engagement, creating a self-sustaining ecosystem where 'Content = Money'. Designed platform architecture for fund deposits and automated daily rewards.",
+    tags: [
+      {
+        name: "Web3",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Smart Contracts",
+        color: "green-text-gradient",
+      },
+      {
+        name: "DeFi",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: ugc, // You'll need to import appropriate image
+    source_code_link: "https://beta.ugc.fun/",
+  },
+  {
+    name: "LinkedIn AI Agent",
+    description:
+      "Created a cutting-edge AI tool that revolutionizes job search by automating the application process on LinkedIn, enabling personalized applications at scale. The system intelligently identifies relevant positions, customizes application materials, and manages the entire workflow, giving users a competitive advantage in rapidly changing job markets.",
+    tags: [
+      {
+        name: "AI",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Automation",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Python",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: linkedin, // You'll need to import appropriate image
+    source_code_link: "https://github.com/not-your-averagetechie/Linkedin_AI/tree/main",
   },
 ];
 
