@@ -74,6 +74,6 @@ export {
   magicbatch,
   blaster,
   ugc,
-  linkedin,
   phone,
+  linkedin,
 };

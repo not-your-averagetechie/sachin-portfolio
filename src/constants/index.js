@@ -50,7 +50,7 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web3 Developer",
+    title: "Web3 & AI Specialist",
     icon: web,
   },
   {
@@ -58,11 +58,11 @@ const services = [
     icon: mobile,
   },
   {
-    title: "Product Owner",
+    title: "Growth hacking strategies",
     icon: creator,
   },
   {
-    title: "Tokenomics management",
+    title: "Design & Development - MVP",
     icon: backend,
   },
 ];
@@ -347,7 +347,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: blaster, // You'll need to import appropriate image
+    image: blaster,
     source_code_link: "https://github.com/not-your-averagetechie/blaster.ai-GenAI-",
   },
   {
@@ -368,7 +368,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: ugc, // You'll need to import appropriate image
+    image: ugc,
     source_code_link: "https://beta.ugc.fun/",
   },
   {
@@ -389,7 +389,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: linkedin, // You'll need to import appropriate image
+    image: linkedin,
     source_code_link: "https://github.com/not-your-averagetechie/Linkedin_AI/tree/main",
   },
 ];
@@ -407,7 +407,7 @@ const socialLinks = [
   },
   {
     name: "Phone",
-    icon: mobile, // Changed to use the mobile icon we already have
+    icon: mobile,
     link: "tel:+917057480940",
     display: "+91 7057480940",
   },

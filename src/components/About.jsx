@@ -54,7 +54,9 @@ const About = () => {
         className='mt-4 text-secondary text-[17px] max-w-5xl leading-[30px]'
       >
         With a robust background in TypeScript, JavaScript, React, Node.js, and web3.js, I've honed both technical expertise and product management insights. My career showcases adaptability, collaborative prowess, and a knack for engineering user-centric solutions. 
-Transitioning into a Web3 Product Manager role, I bring a unique blend of technical finesse and strategic vision. Seamlessly translating user needs into impactful products, I'm eager to unite my skills with your team's, shaping the future of Web3 technologies together.</motion.p>
+        Transitioning into a Web3 Product Manager role, I bring a unique blend of technical finesse and strategic vision. Additionally, I have experience leveraging AI technologies to optimize workflows and enhance decision-making processes. My expertise also extends to SaaS product development, where I've contributed to building scalable, cloud-based solutions that drive business growth. 
+        Seamlessly translating user needs into impactful products, I'm eager to unite my skills with your team's, shaping the future of Web3, AI, and SaaS technologies together.
+      </motion.p>
 
       <div className='mt-20 flex flex-wrap gap-10'>
         {services.map((service, index) => (
