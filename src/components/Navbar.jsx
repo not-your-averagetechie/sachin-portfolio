@@ -46,11 +46,14 @@ const Navbar = () => {
             >
             <p className='text-white text-[18px] font-bold cursor-pointer flex'>
               Sachin &nbsp;
-              <span className='sm:block hidden'> | Tech PM @Web3, AI </span>
+              <span className='sm:block hidden'>
+                | Tech PM @Web3, AI
+                <p className='text-white text-[12px] font-normal italic mt-1'>
+                  GMAT 100%ILE AND CAT 98.7%ILE
+                </p>
+              </span>
             </p>
-            <p className='text-white text-[12px] italic mt-1'>
-              GMAT 100%ILE AND CAT 98.7%ile
-            </p>
+            
             </Link>
 
             <ul className='list-none hidden sm:flex flex-row gap-10'>
