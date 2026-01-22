@@ -31,6 +31,9 @@ import {
   ugc,        // Add new image import
   linkedin,   // Add new image import
   github,     // Add new image import
+  forkast,    // Add forkast logo
+  dyp,        // Add dyp logo
+  forkastProject,
 } from "../assets";
 
 export const navLinks = [
@@ -126,7 +129,7 @@ const experiences = [
   {
     title: "Product Manager, Operations (Web3 & AI)",
     company_name: "Forkast",
-    icon: web, // Use a relevant icon or add a new one if available
+    icon: forkast,
     iconBg: "#383E56",
     date: "June 2025 - Present, NewYork,USA",
     points: [
@@ -139,9 +142,9 @@ const experiences = [
   {
     title: "AI Trainer at corporates and business colleges",
     company_name: "AI Trainer",
-    icon: creator, // Use a relevant icon or add a new one if available
+    icon: dyp,
     iconBg: "#E6DEDD",
-    date: "Sept 2023 - May 2025, Dubai,UAE",
+    date: "Oct 2025 - Present, Pune, India",
     points: [
       "Delivered high-level AI training programs for corporate leadership and business colleges.",
       "Lead the Department of Artificial Intelligence at DY-PATIL B-SCHOOL,Pune.",
@@ -152,7 +155,7 @@ const experiences = [
     company_name: "Pluto",
     icon: Plutologo,
     iconBg: "#383E56",
-    date: "Sept 2023 - Present",
+    date: "Sept 2023 - May 2025",
     points: [
       "Orchestrated the release of three NFT collections and tokens (Gigav , Aptos ), generating a minimum of 200k usd in initial sales; ensured marketing efforts were synchronized with product availability, and launching another token in upcoming months for CREATE.",
       "Spearheaded fundraising efforts by crafting the company's whitepaper, developing a compelling pitch deck, and securing investments from major investors like polygon ventures and jungle ventures.",
@@ -208,6 +211,30 @@ const testimonials = [
 ];
 
 const projects = [
+  {
+    name: "Forkast.gg",
+    description:
+      "Flagship trading platform doing 60k+ USD daily volume in trades. Led product and built fast order-matching engine (CLOB), scaling users from 1,000 to 120,000+. Built a fast, scalable CLOB engine and ecosystem for 1000+ active markets. Trusted by thousands of users. Read more at forkast.gg.",
+    tags: [
+      { name: "Web3", color: "blue-text-gradient" },
+      { name: "CLOB", color: "green-text-gradient" },
+      { name: "Trading", color: "pink-text-gradient" },
+    ],
+    image: forkastProject,
+    source_code_link: "https://forkast.gg/",
+  },
+  {
+    name: "UGC.fun",
+    description:
+      "Developed and launched UGC.Fun, an innovative platform that monetizes community-generated content through a unique trading mechanism. Implemented a 24-hour reward cycle where content creators earn based on engagement, creating a self-sustaining ecosystem where 'Content = Money'. Designed platform architecture for fund deposits and automated daily rewards.",
+    tags: [
+      { name: "Web3", color: "blue-text-gradient" },
+      { name: "Smart Contracts", color: "green-text-gradient" },
+      { name: "DeFi", color: "pink-text-gradient" },
+    ],
+    image: ugc,
+    source_code_link: "https://beta.ugc.fun/",
+  },
   {
     name: "Criptic web3 app  ",
     description:
@@ -290,7 +317,7 @@ const projects = [
       },
     ],
     image: create,
-    source_code_link: "https://createlayer.xyz/",
+    source_code_link: "https://x.com/createlayer",
   },
   {
     name: "Consciousleap",
@@ -332,7 +359,7 @@ const projects = [
       },
     ],
     image: magicbatch,
-    source_code_link: "https://magicbatch.xyz/",
+    source_code_link: "https://opensea.io/collection/magicbatch",
   },
   {
     name: "Blaster AI",
@@ -354,27 +381,6 @@ const projects = [
     ],
     image: blaster,
     source_code_link: "https://github.com/not-your-averagetechie/blaster.ai-GenAI-",
-  },
-  {
-    name: "UGC.fun",
-    description:
-      "Developed and launched UGC.Fun, an innovative platform that monetizes community-generated content through a unique trading mechanism. Implemented a 24-hour reward cycle where content creators earn based on engagement, creating a self-sustaining ecosystem where 'Content = Money'. Designed platform architecture for fund deposits and automated daily rewards.",
-    tags: [
-      {
-        name: "Web3",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Smart Contracts",
-        color: "green-text-gradient",
-      },
-      {
-        name: "DeFi",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: ugc,
-    source_code_link: "https://beta.ugc.fun/",
   },
   {
     name: "LinkedIn AI Agent",
@@ -411,7 +417,7 @@ const socialLinks = [
     link: "https://www.linkedin.com/in/sachin-yadav-web3/",
   },
   {
-    name: "Phone",
+    name: "Phone/ Whatsapp / BOTIM",
     icon: mobile,
     link: "tel:+917057480940",
     display: "+91 7057480940",

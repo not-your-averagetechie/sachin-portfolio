@@ -29,6 +29,9 @@ import Plutologo from "./company/Plutologo.png";
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import forkast from "./forkast.png";
+import dyp from "./dyp.png";
+import forkastProject from "./forkast-project.png";
 
 import create from "./create.png";
 import magicbatch from "./magicbatch.png";
@@ -76,4 +79,7 @@ export {
   ugc,
   phone,
   linkedin,
+  forkast,
+  dyp,
+  forkastProject,
 };

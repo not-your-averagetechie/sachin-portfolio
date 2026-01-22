@@ -1,0 +1,3 @@
+import forkastProject from "./forkast-project.png";
+// ...existing code...
+export { forkastProject };
