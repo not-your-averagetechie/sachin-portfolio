@@ -124,43 +124,27 @@ const technologies = [
 
 const experiences = [
   {
-    title: "Product Developer I ",
-    company_name: "PhenomPeople Inc.",
-    icon: Phenom,
+    title: "Product Manager, Operations (Web3 & AI)",
+    company_name: "Forkast",
+    icon: web, // Use a relevant icon or add a new one if available
     iconBg: "#383E56",
-    date: "Januaury 2022 - April 2022",
+    date: "June 2025 - Present, NewYork,USA",
     points: [
-      "Conducted in-depth business discussions with senior management and provided key market data from various sources to inform business decisions",
-      "Built charts and graphs to visualize data and met the operational data needs of the marketing team ",
-      "Conducted thorough business analysis using tools such as MySql, Python, Beautifulsoup, and Numpy to identify ",
-      "System connections and develop new bot scripts, procedures, and guidelines",
+      "Led product and built fast order-matching engine (CLOB), scaling users from 1,000 to 120,000+.",
+      "Direct daily operations for 1000+ active markets, overseeing liquidity management, order book health, CLOB market making (AMM) strategies, and ecosystem fund management.",
+      "Heading CFTC license division including security protocols, document preparation, and led a 3M seed raise as part of a 12M post-SAFE round led by Arbitrum ventures.",
+      "Drove platform volume to 50k+ USD daily within just 8 months through proprietary growth-hacking frameworks and strategic protocol collaborations with Myriad, SX Bet, and Ronin Wallet.",
     ],
   },
   {
-    title: "Associate Tech Product Manager",
-    company_name: "Gigaverse pvt. ltd.",
-    icon: gigaverse,
+    title: "AI Trainer at corporates and business colleges",
+    company_name: "AI Trainer",
+    icon: creator, // Use a relevant icon or add a new one if available
     iconBg: "#E6DEDD",
-    date: "June 2021 - Dec 2022",
+    date: "Sept 2023 - May 2025, Dubai,UAE",
     points: [
-      "Managed and led technical product teams in the development and execution of protocol strategies, designs, and implementations",
-      "Created bespoke bots to meet the specific needs of Gigaverse and its clients in defining and launching their instances of the protocol",
-      "Facilitated goal setting, planning, retrospectives, and backlog grooming to ensure project milestones and objectives attained for website code",
-      "Implemented five cutting-edge projects, including the launch of a groundbreaking NFT project. Later promoted to Associate Tech Product Manager.",
-    ],
-  },
-  {
-    title: "Web3 Product Owner",
-    company_name: "Platter Inc",
-    icon: Platter,
-    iconBg: "#383E56",
-    date: "Dec 2022 - August 2023",
-    points: [
-      "Developed 2 decentralized applications dApps (Platter.fi and zerion.io) with 99.7% uptime, utilizing blockchain technologies to enhance technical credibility in the Web3 space.",
-      "Integrated 10+ third-party APIs to improve product functionality, resulting in increased user satisfaction by collaborating effectively with cross-functional teams.",
-      "Built relationships with key stakeholders, including KOLs, exchanges, launchpads, liquidity providers, and investors, to ensure smooth execution of token operations.",
-      "Strategized and executed token launches, including token distribution, public sales, and community engagement initiatives.",
-      "Developed and implemented distribution/airdrop models, focusing on utility, governance, and staking mechanisms for sustainable token economy growth.",
+      "Delivered high-level AI training programs for corporate leadership and business colleges.",
+      "Lead the Department of Artificial Intelligence at DY-PATIL B-SCHOOL,Pune.",
     ],
   },
   {
@@ -176,6 +160,27 @@ const experiences = [
       "Managed sprints, oversaw post-release updates, created release metrics dashboards on Mixpanel, and collaborated with the CEO on finalizing the PRD and design flow, while also addressing roadblocks in UI/UX and technical implementation.",
       "Successfully launched two recent dApps in the last 3 months (ugc.fun and creator buds) while serving as acting Head of Product, which are now planned for integration with chains to increase visibility and user adoption; both platforms are powered by CREATE technology.",
       "Collaborated with KOLs for influencing and educating masses, and worked with exchanges and services to ensure liquidity and maintain token stability.",
+    ],
+  },
+  {
+    title: "Web3 Product Owner",
+    company_name: "Platter Inc.",
+    icon: Platter,
+    iconBg: "#383E56",
+    date: "April 2022 - August 2023, Bangalore,INDIA",
+    points: [
+      "Built and maintained 2 Web3 dApps (Platter.fi, Zerion.io) with 5l+ user base now and 2M+ revenue",
+      "Led token operations including distribution planning, public sales, and launching utility, and staking-based airdrops, Also did partnerships with KOLs, exchanges, launchpads for token launch.",
+    ],
+  },
+  {
+    title: "Product Developer I",
+    company_name: "PhenomPeople Inc.",
+    icon: Phenom,
+    iconBg: "#383E56",
+    date: "April 2021 - March 2022,Hyderabad,INDIA",
+    points: [
+      "Developed visual applications using the MERN stack, enhancing reporting for the marketing team.",
     ],
   },
 ];
