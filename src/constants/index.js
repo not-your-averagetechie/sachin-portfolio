@@ -133,10 +133,10 @@ const experiences = [
     iconBg: "#383E56",
     date: "June 2025 - Present, NewYork,USA",
     points: [
-      "Led product and built fast order-matching engine (CLOB), scaling users from 1,000 to 120,000+.",
-      "Direct daily operations for 1000+ active markets, overseeing liquidity management, order book health, CLOB market making (AMM) strategies, and ecosystem fund management.",
+      "Led product and built fast order-matching engine (CLOB), scaling users from 1,000 to 30,000+.",
+      "Direct daily operations for 2000+ active markets, overseeing liquidity management, order book health, CLOB market making (AMM) strategies, and ecosystem fund management.",
       "Heading CFTC license division including security protocols, document preparation, and led a 3M seed raise as part of a 12M post-SAFE round led by Arbitrum ventures.",
-      "Drove platform volume to 50k+ USD daily within just 8 months through proprietary growth-hacking frameworks and strategic protocol collaborations with Myriad, SX Bet, and Ronin Wallet.",
+      "Drove platform volume to 300k+ USD daily within just 8 months through proprietary growth-hacking frameworks and strategic protocol collaborations with Myriad, SX Bet, and Ronin Wallet.",
     ],
   },
   {
@@ -214,7 +214,7 @@ const projects = [
   {
     name: "Forkast.gg",
     description:
-      "Flagship trading platform doing 60k+ USD daily volume in trades. Led product and built fast order-matching engine (CLOB), scaling users from 1,000 to 120,000+. Built a fast, scalable CLOB engine and ecosystem for 1000+ active markets. Trusted by thousands of users. Read more at forkast.gg.",
+      "Flagship trading platform doing 300k+ USD daily volume in trades. Led product and built fast order-matching engine (CLOB), scaling users from 1,000 to 30,000+. Built a fast, scalable CLOB engine and ecosystem for 2000+ active markets. Trusted by thousands of users. Read more at forkast.gg.",
     tags: [
       { name: "Web3", color: "blue-text-gradient" },
       { name: "CLOB", color: "green-text-gradient" },
