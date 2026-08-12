@@ -1,11 +1,13 @@
 import { useState, useRef, Suspense } from "react";
+import { useInView } from "framer-motion";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { Points, PointMaterial, Preload } from "@react-three/drei";
 import * as random from "maath/random/dist/maath-random.esm";
 
 const Stars = (props) => {
   const ref = useRef();
-  const [sphere] = useState(() => random.inSphere(new Float32Array(5000), { radius: 1.2 }));
+  // length must be divisible by 3, or the last vertex is NaN
+  const [sphere] = useState(() => random.inSphere(new Float32Array(4998), { radius: 1.2 }));
 
   useFrame((state, delta) => {
     ref.current.rotation.x -= delta / 10;
@@ -28,9 +30,12 @@ const Stars = (props) => {
 };
 
 const StarsCanvas = () => {
+  const wrapRef = useRef(null);
+  const inView = useInView(wrapRef);
+
   return (
-    <div className='w-full h-auto absolute inset-0 z-[-1]'>
-      <Canvas camera={{ position: [0, 0, 1] }}>
+    <div ref={wrapRef} className='w-full h-auto absolute inset-0 z-[-1]'>
+      <Canvas frameloop={inView ? "always" : "never"} camera={{ position: [0, 0, 1] }}>
         <Suspense fallback={null}>
           <Stars />
         </Suspense>

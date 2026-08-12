@@ -16,10 +16,13 @@ const ExperienceCard = ({ experience }) => {
   return (
     <VerticalTimelineElement
       contentStyle={{
-        background: "#1d1836",
-        color: "#fff",
+        background: "#101318",
+        color: "#D7E2EA",
+        border: "1px solid rgba(215, 226, 234, 0.12)",
+        boxShadow: "none",
+        borderRadius: "24px",
       }}
-      contentArrowStyle={{ borderRight: "7px solid  #232631" }}
+      contentArrowStyle={{ borderRight: "7px solid rgba(215, 226, 234, 0.12)" }}
       date={experience.date}
       iconStyle={{ 
         background: experience.iconBg, 
@@ -32,16 +35,28 @@ const ExperienceCard = ({ experience }) => {
       }}
       icon={
         <div className='flex justify-center items-center w-8 h-8'>
-          <img
-            src={experience.icon}
-            alt={experience.company_name}
-            className='w-8 h-8 object-contain'
-          />
+          {experience.iconText ? (
+            <span
+              className='w-8 h-8 flex items-center justify-center rounded text-white font-black text-[17px]'
+              style={{
+                background:
+                  "linear-gradient(123deg, #18011F 7%, #B600A8 55%, #BE4C00 100%)",
+              }}
+            >
+              {experience.iconText}
+            </span>
+          ) : (
+            <img
+              src={experience.icon}
+              alt={experience.company_name}
+              className='w-8 h-8 object-contain'
+            />
+          )}
         </div>
       }
     >
       <div>
-        <h3 className='text-white text-[24px] font-bold'>{experience.title}</h3>
+        <h3 className='text-frost text-[24px] font-bold'>{experience.title}</h3>
         <p
           className='text-secondary text-[16px] font-semibold'
           style={{ margin: 0 }}
@@ -69,7 +84,7 @@ const Experience = () => {
     <>
       <motion.div variants={textVariant()}>
         <p className={`${styles.sectionSubText} text-center`}>
-          What I have done so far
+          Product · AI · Teaching · Founding
         </p>
         <h2 className={`${styles.sectionHeadText} text-center`}>
           Work Experience.

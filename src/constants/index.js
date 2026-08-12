@@ -34,6 +34,7 @@ import {
   forkast,    // Add forkast logo
   dyp,        // Add dyp logo
   forkastProject,
+  phone,
 } from "../assets";
 
 export const navLinks = [
@@ -42,8 +43,16 @@ export const navLinks = [
     title: "About",
   },
   {
+    id: "projects",
+    title: "Projects",
+  },
+  {
     id: "work",
     title: "Work",
+  },
+  {
+    id: "teaching",
+    title: "Teaching",
   },
   {
     id: "contact",
@@ -51,21 +60,112 @@ export const navLinks = [
   },
 ];
 
+// Headline metrics — the highlight reel
+export const stats = [
+  { value: "$1B+", label: "Total volume", sub: "fully on-chain" },
+  { value: "$1M+", label: "Daily volume", sub: "2,000+ active markets" },
+  { value: "30k+", label: "Users scaled to", sub: "from 1,000" },
+  { value: "100%ile", label: "GMAT", sub: "CAT 98.7%ile" },
+];
+
+// AI models orbiting the hero — the toolkit of an AI PM
+export const aiModels = [
+  { name: "Claude", vendor: "Anthropic", color: "#D97757" },
+  { name: "Fable 5", vendor: "Anthropic", color: "#B600A8" },
+  { name: "GPT-5.4", vendor: "OpenAI", color: "#10A37F" },
+  { name: "Gemini", vendor: "Google", color: "#4E8CF9" },
+];
+
+// Numbered services list (white section)
+export const aiServices = [
+  {
+    number: "01",
+    name: "AI Product Strategy",
+    description:
+      "Turning frontier-model capability into shipped product — model selection, eval loops, and roadmaps that compound instead of demo.",
+  },
+  {
+    number: "02",
+    name: "Agentic Workflows",
+    description:
+      "Designing multi-agent systems, RAG pipelines and tool-use flows that move real business metrics — 70-80% conversion lifts, not slideware.",
+  },
+  {
+    number: "03",
+    name: "Markets & Web3 Infra",
+    description:
+      "CLOB matching engines, tokenomics and prediction markets — scaled from 1,000 to 30,000+ users past $1B+ in on-chain volume, $1M+ of it every day.",
+  },
+  {
+    number: "04",
+    name: "Growth & GTM",
+    description:
+      "Proprietary growth-hacking frameworks, KOL ecosystems and protocol partnerships that take products from 0 → 1 → N.",
+  },
+  {
+    number: "05",
+    name: "Design → MVP",
+    description:
+      "From PRD to pixel — rapid prototyping with modern stacks to validate the bet before committing engineering.",
+  },
+];
+
+// Featured projects for the sticky-stack cards (matched into `projects` below by name).
+// `video` plays as the card's primary media; `shots` are supporting screenshots
+// loaded from /public/shots — any file that isn't there yet is simply skipped,
+// so dropping images in later needs no code change.
+export const featuredProjectNames = [
+  {
+    name: "ATLAS",
+    category: "Agentic Trading · Forkast",
+    stat: "1,000+ users in the first 10 days · Covered by The Block",
+    video: "/media/atlas-agent.mp4",
+    shots: ["/shots/atlas-1.png", "/shots/atlas-2.png"],
+  },
+  {
+    name: "Forkast.gg",
+    category: "AI × Prediction Markets",
+    stat: "$1B+ total volume · $1M+ daily · fully on-chain",
+    video: "/media/forkast.mp4",
+    shots: ["/shots/forkast-1.png", "/shots/forkast-2.png"],
+  },
+  {
+    name: "Buddi",
+    category: "Voice-First AI",
+    stat: "Shipped on iOS, Windows & desktop",
+    video: "/media/buddi.mp4",
+    shots: ["/shots/buddi-1.png", "/shots/buddi-2.png"],
+  },
+  {
+    name: "UGC.fun",
+    category: "Consumer Web3",
+    stat: "Content = Money · 24h reward cycles",
+    shots: ["/shots/ugc-1.png", "/shots/ugc-2.png"],
+  },
+  {
+    name: "BLOCKMEN",
+    category: "Founder · Blockchain × AI",
+    stat: "Consultancy for prediction markets — automated & intelligent",
+    video: "/media/blockmen.mp4",
+    shots: ["/shots/blockmen-1.png", "/shots/blockmen-2.png"],
+  },
+];
+
 const services = [
   {
-    title: "Web3 & AI Specialist",
+    title: "AI & Web3 Product Head",
     icon: web,
   },
   {
-    title: "Tech Product Manager",
+    title: "Agentic AI Architect",
     icon: mobile,
   },
   {
-    title: "Growth hacking strategies",
+    title: "AI Professor & Trainer",
     icon: creator,
   },
   {
-    title: "Design & Development - MVP",
+    title: "Growth & Tokenomics",
     icon: backend,
   },
 ];
@@ -123,46 +223,79 @@ const technologies = [
     name: "docker",
     icon: docker,
   },
+  // icon-less pills — rendered as text chips
+  { name: "Python" },
+  { name: "Solidity" },
+  { name: "Solana" },
+  { name: "Next.js" },
+  { name: "PostgreSQL" },
+  { name: "GoLang" },
+  { name: "AWS" },
+  { name: "TensorFlow" },
+  { name: "PyTorch" },
+  { name: "LangChain" },
+  { name: "Hugging Face" },
+  { name: "Scikit-learn" },
+  { name: "OpenCV" },
+  { name: "Pandas" },
+  { name: "n8n", preserveCase: true },
+  { name: "Mixpanel" },
 ];
 
 const experiences = [
   {
-    title: "Product Manager, Operations (Web3 & AI)",
-    company_name: "Forkast",
+    title: "Product Head, AI & Operations",
+    company_name: "Forkast.gg",
     icon: forkast,
     iconBg: "#383E56",
-    date: "June 2025 - Present, NewYork,USA",
+    date: "June 2025 - Present · New York (Remote)",
     points: [
-      "Led product and built fast order-matching engine (CLOB), scaling users from 1,000 to 30,000+.",
-      "Direct daily operations for 2000+ active markets, overseeing liquidity management, order book health, CLOB market making (AMM) strategies, and ecosystem fund management.",
-      "Heading CFTC license division including security protocols, document preparation, and led a 3M seed raise as part of a 12M post-SAFE round led by Arbitrum ventures.",
-      "Drove platform volume to 300k+ USD daily within just 8 months through proprietary growth-hacking frameworks and strategic protocol collaborations with Myriad, SX Bet, and Ronin Wallet.",
+      "Shipped ATLAS, a no-code agentic trading harness for prediction markets — pick a strategy, set risk, deploy in seconds, and the agent trades 24/7 while earning through daily quests. Covered by The Block.",
+      "Led product and built a fast order-matching engine (CLOB), scaling users from 1,000 to 30,000+ across 2,000+ active markets.",
+      "Direct daily operations for 2,000+ active markets — liquidity management, order book health, CLOB/AMM market-making strategies and ecosystem fund management.",
+      "Head the CFTC license division including security protocols and document preparation; led a $3M seed raise as part of a $12M post-SAFE round led by Arbitrum Ventures.",
+      "Scaled the platform past $1B+ in cumulative on-chain volume — now clearing $1M+ daily — via proprietary growth-hacking frameworks and protocol collaborations with Myriad, SX Bet and Ronin Wallet.",
+      "Launched TVT League — a two-week Trader vs Trader ranked competition powered by Arbitrum with a $3,500 USDC prize pool and dual volume/PnL leaderboards.",
     ],
   },
   {
-    title: "AI Trainer at corporates and business colleges",
-    company_name: "AI Trainer",
+    title: "AI Professor — AI for Businesses",
+    company_name: "Dr. D. Y. Patil B-School",
     icon: dyp,
     iconBg: "#E6DEDD",
-    date: "Oct 2025 - Present, Pune, India",
+    date: "May 2025 - Present · Pune, India (On-site)",
     points: [
-      "Delivered high-level AI training programs for corporate leadership and business colleges.",
-      "Lead the Department of Artificial Intelligence at DY-PATIL B-SCHOOL,Pune.",
+      "Visiting faculty heading the Department of Artificial Intelligence.",
+      "Architect MBA and PGDM curriculum specialising in Agentic AI, GenAI and AI Security.",
+      "Direct capstone projects and research initiatives, and run intensive workshops including Saturday masterclasses and weekday extra sessions.",
+      "Run Faculty Development Programmes so other educators can teach AI in HRM, business analytics, finance and operations.",
     ],
   },
   {
-    title: "Technical Product Manager",
+    title: "Founder",
+    company_name: "BLOCKMEN",
+    iconText: "B",
+    iconBg: "#18011F",
+    date: "Feb 2026 - Present · Bangalore, India",
+    points: [
+      "Founded theblockmen.com — a blockchain × AI consultancy for prediction markets, automated and intelligent.",
+      "Bringing the best talent for blockchain and AI to teams shipping in the space.",
+    ],
+  },
+  {
+    title: "Technical Product Manager, AI & Web3 (acting Head of Product)",
     company_name: "Pluto",
     icon: Plutologo,
     iconBg: "#383E56",
-    date: "Sept 2023 - May 2025",
+    date: "Sept 2023 - June 2025 · Dubai (Hybrid)",
     points: [
-      "Orchestrated the release of three NFT collections and tokens (Gigav , Aptos ), generating a minimum of 200k usd in initial sales; ensured marketing efforts were synchronized with product availability, and launching another token in upcoming months for CREATE.",
-      "Spearheaded fundraising efforts by crafting the company's whitepaper, developing a compelling pitch deck, and securing investments from major investors like polygon ventures and jungle ventures.",
-      "Optimized product design, gather feedback, and measure core KPIs using Mixpanel.",
-      "Managed sprints, oversaw post-release updates, created release metrics dashboards on Mixpanel, and collaborated with the CEO on finalizing the PRD and design flow, while also addressing roadblocks in UI/UX and technical implementation.",
-      "Successfully launched two recent dApps in the last 3 months (ugc.fun and creator buds) while serving as acting Head of Product, which are now planned for integration with chains to increase visibility and user adoption; both platforms are powered by CREATE technology.",
-      "Collaborated with KOLs for influencing and educating masses, and worked with exchanges and services to ensure liquidity and maintain token stability.",
+      "Orchestrated the release of three NFT collections and tokens (Gigav, Aptos), generating a minimum of $200k in initial sales, with marketing synchronized to product availability.",
+      "Spearheaded fundraising by crafting the whitepaper and pitch deck, securing investment from Polygon Ventures and Jungle Ventures.",
+      "Architected Blaster AI on TensorFlow, PyTorch, GenAI, Scikit-learn, LangChain, Hugging Face, NLTK, NumPy and Pandas — lifting lead conversion to 70-80%.",
+      "Engineered LinkedIn_AI, an agent that automates personalised job applications at scale.",
+      "Shipped two dApps — ugc.fun and Creator Buds — while serving as acting Head of Product; both powered by CREATE technology.",
+      "Ran sprints, release dashboards and PRD sign-off with the CEO; measured core KPIs using Mixpanel.",
+      "Collaborated with KOLs, exchanges and services to hold liquidity and maintain token stability.",
     ],
   },
   {
@@ -170,10 +303,13 @@ const experiences = [
     company_name: "Platter Inc.",
     icon: Platter,
     iconBg: "#383E56",
-    date: "April 2022 - August 2023, Bangalore,INDIA",
+    date: "April 2022 - August 2023 · Bangalore, India",
     points: [
-      "Built and maintained 2 Web3 dApps (Platter.fi, Zerion.io) with 5l+ user base now and 2M+ revenue",
-      "Led token operations including distribution planning, public sales, and launching utility, and staking-based airdrops, Also did partnerships with KOLs, exchanges, launchpads for token launch.",
+      "Promoted from lead developer to Product Owner.",
+      "Built and maintained 2 Web3 dApps (Platter.fi, Zerion.io) with a 5L+ user base and $2M+ revenue.",
+      "Designed dApp interfaces with web3 libraries and wallet integrations, and ran backend plus DevOps.",
+      "Led technical product teams on protocol strategy and built bespoke bots for Gigaverse and its clients.",
+      "Led token operations including distribution planning, public sales, utility and staking-based airdrops, plus KOL, exchange and launchpad partnerships.",
     ],
   },
   {
@@ -181,44 +317,184 @@ const experiences = [
     company_name: "PhenomPeople Inc.",
     icon: Phenom,
     iconBg: "#383E56",
-    date: "April 2021 - March 2022,Hyderabad,INDIA",
+    date: "April 2021 - March 2022 · Hyderabad, India",
     points: [
-      "Developed visual applications using the MERN stack, enhancing reporting for the marketing team.",
+      "Business analysis and data work with MySQL, Python, BeautifulSoup and NumPy.",
+      "Built MERN-stack visual applications, charts and dashboards for the marketing team.",
     ],
   },
 ];
 
+// Education, credentials and test scores
+export const education = [
+  {
+    school: "Harvard Business School",
+    program: "Executive Education — AI for Leaders & Business Analytics",
+    detail:
+      "Post-graduate course on how AI is reshaping modern business structures, and the core principles and architecture of AI-native organisations.",
+    date: "Sept 2025 - Dec 2025",
+    grade: "Grade 10",
+  },
+  {
+    school: "Pune University",
+    program: "B.E. Information Technology",
+    detail:
+      "Front-end development, Python and systems foundations that became the technical base for product leadership.",
+    date: "Aug 2017 - Aug 2021",
+    grade: "9.89 CGPA",
+  },
+];
+
+export const testScores = [
+  { label: "GMAT", value: "100%ile", year: "2025" },
+  { label: "CAT", value: "98.7%ile", year: "" },
+  { label: "JEE Advanced", value: "AIR 11854", year: "" },
+  { label: "JEE Mains", value: "85", year: "" },
+];
+
+// Teaching — AI department leadership at DY Patil
+export const teaching = {
+  role: "AI Professor (AI for Businesses) · Head, Department of Artificial Intelligence",
+  school: "Dr. D. Y. Patil B-School, Pune",
+  since: "Visiting faculty since May 2025",
+  intro:
+    "I architect the MBA and PGDM AI curriculum — Agentic AI, GenAI and AI Security — supervise capstones, and run Faculty Development Programmes so other professors can teach AI in HRM, analytics, finance and operations. Everything I give my students, I publish free.",
+  highlights: [
+    {
+      title: "Curriculum architecture",
+      body: "MBA & PGDM specialisations in Agentic AI, GenAI and AI Security, plus Saturday masterclasses and weekday intensives.",
+    },
+    {
+      title: "Faculty Development Programmes",
+      body: "Upskilling other educators to teach AI across HRM, business analytics, finance and operations.",
+    },
+    {
+      title: "Open resources, not gated courses",
+      body: "An 18+ page beginner-to-agent n8n guide (242 comments) and a 60-lecture crash course on n8n, ElevenLabs and vibe coding — priced at $500, then released free.",
+    },
+  ],
+  capstones: [
+    {
+      student: "Ani Jain",
+      program: "MBA Finance",
+      project: "ESG Insight Dashboard",
+      body: "Live dashboard visualising and analysing sustainability metrics across ten entities at an average ESG score of 74.1, with rating distribution analysis.",
+    },
+    {
+      student: "Ashay Sonwane",
+      program: "Business Analytics",
+      project: "AI-Driven Customer Intelligence Dashboard",
+      body: "RFM analysis plus K-Means clustering segmenting customers into Champions, Loyal, Potential Loyalists and At-Risk — Python/Flask, Pandas, NumPy, Scikit-learn, Chart.js and PostgreSQL.",
+    },
+    {
+      student: "Abhijeet Shukla",
+      program: "Business Analytics PGDM",
+      project: "Real-Estate Analytics Dashboard",
+      body: "100+ properties and a $30M+ portfolio across three regions, comparing single-family versus condo revenue and price per square foot.",
+    },
+  ],
+};
+
 const testimonials = [
   {
     testimonial:
-      "As a Product Manager, I am dedicated to delivering high-quality products that meet user needs and drive business success to the next stage of innovation and technology with highest perfection.",
+      "Products should ship, not demo. Whether it's a CLOB matching engine or an agentic trading harness, I hold the bar at production quality — real users, real volume, real regulatory scrutiny.",
     name: "Commitment to Excellence",
-    
   },
   {
     testimonial:
-      "Learning and adaptation are vital to my role as a Product Manager. Staying up-to-date with the latest industry trends and technologies is key to achieving product success.",
+      "The fastest way to understand a frontier is to teach it. Leading an AI department while shipping AI products keeps both sharp — and everything I give my students, I publish free rather than gate.",
     name: "Continuous Improvement",
-    
-   
   },
   {
     testimonial:
-      "Collaborative teamwork is at the heart of my approach to product management. I work closely with cross-functional teams to ensure our products meet strategic goals and user expectations",
+      "When we launched ATLAS I named every engineer on the team individually. Cross-functional work only compounds when credit is public and specific — that's how I lead product.",
     name: "Effective Collaboration",
-    
   },
 ];
 
 const projects = [
   {
+    name: "ATLAS",
+    description:
+      "No-code agentic trading for prediction markets, built at Forkast — pick a strategy, set risk, deploy in seconds. The agent trades 24/7.",
+    highlights: [
+      {
+        label: "Own harness",
+        body: "Custom model layer + runtime skill registry — quoting, hedging, risk limits.",
+      },
+      {
+        label: "Cross-venue",
+        body: "Polymarket, Forkast & Kalshi via one normalised interface.",
+      },
+      {
+        label: "AI layer",
+        body: "LLM planner with tool-calling, backtests and evals.",
+      },
+      {
+        label: "Infra",
+        body: "AWS + GCP, Kubernetes agent workers, autoscaling.",
+      },
+    ],
+    tags: [
+      { name: "Agentic AI", color: "blue-text-gradient" },
+      { name: "Prediction Markets", color: "green-text-gradient" },
+      { name: "Kubernetes", color: "pink-text-gradient" },
+      { name: "AWS / GCP", color: "blue-text-gradient" },
+      { name: "LLM Planner", color: "green-text-gradient" },
+    ],
+    gradient: "linear-gradient(135deg, #18011F 0%, #B600A8 45%, #7621B0 100%)",
+    glyph: "ATLAS",
+    source_code_link: "https://forkast.gg/agent",
+  },
+  {
+    name: "Buddi",
+    description:
+      "A voice-first AI interview coach I built end to end and shipped on iPhone, Windows and desktop — real-time speech-to-speech coaching that listens, pushes back and remembers your past sessions. Product, model pipeline and distribution: the kind of thing an AI product manager should be able to ship alone.",
+    tags: [
+      { name: "Voice AI", color: "blue-text-gradient" },
+      { name: "iOS / Windows", color: "green-text-gradient" },
+      { name: "LLM Agents", color: "pink-text-gradient" },
+    ],
+    gradient: "linear-gradient(135deg, #0B1F2A 0%, #10A37F 55%, #4E8CF9 100%)",
+    glyph: "BUDDI",
+    source_code_link: "https://buddi.theblockmen.com",
+  },
+  {
+    name: "BLOCKMEN",
+    description:
+      "My consultancy at the intersection of blockchain × AI. I help teams design and ship prediction markets — market mechanics, liquidity, tokenomics and the agentic layer on top — built on everything I learned scaling Forkast past $1B in on-chain volume. Founded Feb 2026, open-sourced under MIT.",
+    tags: [
+      { name: "Founder", color: "blue-text-gradient" },
+      { name: "Consultancy", color: "green-text-gradient" },
+      { name: "TypeScript", color: "pink-text-gradient" },
+    ],
+    gradient: "linear-gradient(135deg, #14171B 0%, #39414A 50%, #BE4C00 100%)",
+    glyph: "BLOCKMEN",
+    source_code_link: "https://theblockmen.com/",
+  },
+  {
     name: "Forkast.gg",
     description:
-      "Flagship trading platform doing 300k+ USD daily volume in trades. Led product and built fast order-matching engine (CLOB), scaling users from 1,000 to 30,000+. Built a fast, scalable CLOB engine and ecosystem for 2000+ active markets. Trusted by thousands of users. Read more at forkast.gg.",
+      "The on-chain prediction market I run product for — scaled from 1,000 to 30,000+ traders, past $1B+ in cumulative volume, now clearing $1M+ every day.",
+    highlights: [
+      {
+        label: "Market infra",
+        body: "CLOB matching engine + AMM liquidity across 2,000+ live markets.",
+      },
+      {
+        label: "AI-first",
+        body: "Agentic trading (ATLAS), AI market curation and risk tooling.",
+      },
+      {
+        label: "0 → $1B",
+        body: "Growth frameworks + partnerships with Myriad, SX Bet, Ronin.",
+      },
+    ],
     tags: [
-      { name: "Web3", color: "blue-text-gradient" },
+      { name: "On-Chain", color: "blue-text-gradient" },
       { name: "CLOB", color: "green-text-gradient" },
-      { name: "Trading", color: "pink-text-gradient" },
+      { name: "Agentic AI", color: "pink-text-gradient" },
     ],
     image: forkastProject,
     source_code_link: "https://forkast.gg/",
@@ -233,7 +509,7 @@ const projects = [
       { name: "DeFi", color: "pink-text-gradient" },
     ],
     image: ugc,
-    source_code_link: "https://beta.ugc.fun/",
+    source_code_link: "https://ugc.fun",
   },
   {
     name: "Criptic web3 app  ",
@@ -400,25 +676,59 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: linkedin,
+    gradient: "linear-gradient(135deg, #04121F 0%, #0A66C2 55%, #4E8CF9 100%)",
+    glyph: "LinkedIn AI Agent",
+    pattern: "workflow",
+    patternAccent: "#9FD0FF",
     source_code_link: "https://github.com/not-your-averagetechie/Linkedin_AI/tree/main",
+  },
+  {
+    name: "awesome-n8n-templates",
+    description:
+      "The curated automation template library that pairs with my 18+ page beginner-to-agent n8n guide — step-by-step automations with no coding required, AI agent workflows with chat triggers, memory and tool use, and real-world production use cases. 2,000+ battle-tested workflows, published free.",
+    tags: [
+      { name: "n8n", color: "blue-text-gradient" },
+      { name: "Automation", color: "green-text-gradient" },
+      { name: "Open Source", color: "pink-text-gradient" },
+    ],
+    gradient: "linear-gradient(135deg, #1A1020 0%, #6D28D9 50%, #EA4B71 100%)",
+    glyph: "n8n · 2,000+ workflows",
+    pattern: "workflow",
+    patternAccent: "#FF8FA8",
+    source_code_link:
+      "https://github.com/not-your-averagetechie/awesome-n8n-templates",
   },
 ];
 
 const socialLinks = [
   {
-    name: "GitHub",
-    icon: github,
-    link: "https://github.com/not-your-averagetechie",
-  },
-  {
     name: "LinkedIn",
     icon: linkedin,
     link: "https://www.linkedin.com/in/sachin-yadav-web3/",
+    display: "5,622 followers · in/sachin-yadav-web3",
   },
   {
-    name: "Phone/ Whatsapp / BOTIM",
-    icon: mobile,
+    name: "GitHub",
+    icon: github,
+    link: "https://github.com/not-your-averagetechie",
+    display: "100 repositories · not-your-averagetechie",
+  },
+  {
+    name: "X / Twitter",
+    iconText: "𝕏",
+    link: "https://x.com/5ach1n_Er",
+    display: "@5ach1n_Er",
+  },
+  {
+    name: "Email",
+    iconText: "@",
+    link: "mailto:sachin11061998@gmail.com",
+    display: "sachin11061998@gmail.com",
+  },
+  {
+    name: "Phone / WhatsApp / BOTIM",
+    icon: phone,
+    iconInvert: true, // phone.svg ships dark — flip it for the dark theme
     link: "tel:+917057480940",
     display: "+91 7057480940",
   },

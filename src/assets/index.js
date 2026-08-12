@@ -24,20 +24,26 @@ import clogo from "./company/clogo.png";
 import Platter from "./company/platter.jpg";
 import Phenom from "./company/phenom.jpg";
 import gigaverse from "./company/gigaverse.jpg";
-import Pluto from "./company/Pluto.png";
+import Pluto from "./company/Pluto.webp";
 import Plutologo from "./company/Plutologo.png";
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import carrent from "./carrent.webp";
+import jobit from "./jobit.webp";
+import tripguide from "./tripguide.webp";
 import forkast from "./forkast.png";
 import dyp from "./dyp.png";
-import forkastProject from "./forkast-project.png";
+import forkastProject from "./forkast-project.webp";
 
-import create from "./create.png";
-import magicbatch from "./magicbatch.png";
-import health from "./health.png";
-import blaster from "./blaster.png";
-import ugc from "./ugc.png";
+// marquee stills, pulled from the product showreels in public/media
+import forkastHome from "./forkast-home.webp";
+import atlasAgent from "./atlas-agent.webp";
+import blockmenShot from "./blockmen.webp";
+import buddiShot from "./buddi.webp";
+
+import create from "./create.webp";
+import magicbatch from "./magicbatch.webp";
+import health from "./health.webp";
+import blaster from "./blaster.webp";
+import ugc from "./ugc.webp";
 import linkedin from "./linkedin.png";
 import phone from "./phone.svg";
 
@@ -82,4 +88,8 @@ export {
   forkast,
   dyp,
   forkastProject,
+  forkastHome,
+  atlasAgent,
+  blockmenShot,
+  buddiShot,
 };

@@ -1,70 +1,79 @@
 import React from "react";
-import Tilt from "react-parallax-tilt";
-import { motion } from "framer-motion";
 
-import { styles } from "../styles";
-import { services } from "../constants";
-import { SectionWrapper } from "../hoc";
-import { fadeIn, textVariant } from "../utils/motion";
+import { aiModels } from "../constants";
+import FadeIn from "./ui/FadeIn";
+import AnimatedText from "./ui/AnimatedText";
+import ContactButton from "./ui/ContactButton";
 
-const ServiceCard = ({ index, title, icon }) => (
-  <Tilt
-    className="xs:w-[250px] w-full"
-    tiltMaxAngleX={45}
-    tiltMaxAngleY={45}
-    scale={1}
-    transitionSpeed={450}
+const ABOUT_TEXT =
+  "I'm an AI-specialist product manager for prediction markets — I scaled Forkast past $1B in on-chain volume, now clearing $1M+ every day, raised $3M inside a $12M Arbitrum Ventures round, and head a CFTC license division. I also lead the AI department at DY Patil B-School, because the fastest way to understand a frontier is to teach it.";
+
+/** Floating "model chip" — the AI PM's toolkit, orbiting the copy. */
+const ModelChip = ({ model, className = "", delay = 0, x = 0, rot = 0, floatDelay = 0 }) => (
+  <FadeIn
+    delay={delay}
+    x={x}
+    y={0}
+    duration={0.9}
+    className={`absolute hidden sm:block pointer-events-none select-none ${className}`}
   >
-    <motion.div
-      variants={fadeIn("right", "spring", index * 0.5, 0.75)}
-      className='w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card'
+    <div
+      className="chip-float rounded-2xl border border-frost/15 bg-black-100/80 backdrop-blur-sm px-5 py-3 md:px-6 md:py-4"
+      style={{
+        "--chip-rot": `${rot}deg`,
+        animationDelay: `${floatDelay}s`,
+        boxShadow: `0 0 42px ${model.color}2E`,
+      }}
     >
-      <div
-        options={{
-          max: 45,
-          scale: 1,
-          speed: 450,
-        }}
-        className='bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col'
-      >
-        <img
-          src={icon}
-          alt='web-development'
-          className='w-16 h-16 object-contain'
+      <div className="flex items-center gap-2">
+        <span
+          className="inline-block w-2 h-2 rounded-full"
+          style={{ background: model.color }}
         />
-
-        <h3 className='text-white text-[20px] font-bold text-center'>
-          {title}
-        </h3>
+        <span className="text-frost/50 text-[9px] md:text-[10px] uppercase tracking-[0.25em] font-light">
+          {model.vendor}
+        </span>
       </div>
-    </motion.div>
-  </Tilt>
+      <p className="text-frost font-semibold uppercase tracking-wide text-sm md:text-lg mt-0.5">
+        {model.name}
+      </p>
+    </div>
+  </FadeIn>
 );
 
 const About = () => {
   return (
-    <>
-      <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>Introduction</p>
-        <h2 className={styles.sectionHeadText}>Overview.</h2>
-      </motion.div>
+    <section
+      id="about"
+      className="relative bg-primary min-h-screen flex items-center justify-center px-5 sm:px-8 md:px-10 py-20 scroll-mt-[90px]"
+      style={{ overflowX: "clip" }}
+    >
+      {/* floating AI chips in the corners */}
+      <ModelChip model={aiModels[0]} className="top-[6%] left-[2%] md:left-[5%]" delay={0.1} x={-80} rot={-6} floatDelay={0} />
+      <ModelChip model={aiModels[1]} className="top-[8%] right-[2%] md:right-[5%]" delay={0.15} x={80} rot={5} floatDelay={1.2} />
+      <ModelChip model={aiModels[2]} className="bottom-[10%] left-[4%] md:left-[9%]" delay={0.25} x={-80} rot={4} floatDelay={2.1} />
+      <ModelChip model={aiModels[3]} className="bottom-[8%] right-[4%] md:right-[9%]" delay={0.3} x={80} rot={-5} floatDelay={0.7} />
 
-      <motion.p
-        variants={fadeIn("", "", 0.1, 1)}
-        className='mt-4 text-secondary text-[17px] max-w-5xl leading-[30px]'
-      >
-        With a robust background in TypeScript, JavaScript, React, Node.js, and web3.js, I've honed both technical expertise and product management insights. My career showcases adaptability, collaborative prowess, and a knack for engineering user-centric solutions. 
-        Transitioning into a Web3 Product Manager role, I bring a unique blend of technical finesse and strategic vision. Additionally, I have experience leveraging AI technologies to optimize workflows and enhance decision-making processes. My expertise also extends to SaaS product development, where I've contributed to building scalable, cloud-based solutions that drive business growth. 
-        Seamlessly translating user needs into impactful products, I'm eager to unite my skills with your team's, shaping the future of Web3, AI, and SaaS technologies together.
-      </motion.p>
+      <div className="flex flex-col items-center gap-10 sm:gap-14 md:gap-16 max-w-5xl">
+        <FadeIn as="h2" y={40}
+          className="hero-heading font-black uppercase leading-none tracking-tight text-center"
+          style={{ fontSize: "clamp(3rem, 12vw, 160px)" }}
+        >
+          About me
+        </FadeIn>
 
-      <div className='mt-20 flex flex-wrap gap-10'>
-        {services.map((service, index) => (
-          <ServiceCard key={service.title} index={index} {...service} />
-        ))}
+        <AnimatedText
+          text={ABOUT_TEXT}
+          className="text-frost font-medium text-center leading-relaxed max-w-[620px]"
+          style={{ fontSize: "clamp(1rem, 2vw, 1.35rem)" }}
+        />
+
+        <FadeIn delay={0.1} y={20} className="mt-2 sm:mt-4">
+          <ContactButton />
+        </FadeIn>
       </div>
-    </>
+    </section>
   );
 };
 
-export default SectionWrapper(About, "about");
+export default About;

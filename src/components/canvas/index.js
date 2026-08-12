@@ -1,6 +1,7 @@
 import EarthCanvas from "./Earth";
 import BallCanvas from "./Ball";
-import ComputersCanvas from "./Computers";
 import StarsCanvas from "./Stars";
 
-export { EarthCanvas, BallCanvas, ComputersCanvas, StarsCanvas };
+// AICards.jsx and Computers.jsx are kept in the repo but intentionally not
+// exported — the hero uses a video background instead of a WebGL scene.
+export { EarthCanvas, BallCanvas, StarsCanvas };
